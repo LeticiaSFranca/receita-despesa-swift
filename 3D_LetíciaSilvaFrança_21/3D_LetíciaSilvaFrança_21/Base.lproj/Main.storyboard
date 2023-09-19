@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g9y-t4-6iG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lançamento Financeiro-->
+        <scene sceneID="xZe-Hx-gXy">
+            <objects>
+                <tableViewController id="DMP-oQ-AUt" customClass="ViewController" customModule="_D_Leti_ciaSilvaFranc_a_21" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jqD-31-wSb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="113" id="MN3-Lc-K79" customClass="CelulaCustomizadaTableViewCell" customModule="_D_Leti_ciaSilvaFranc_a_21" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MN3-Lc-K79" id="yVY-J4-NSw">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="113"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição do Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE1-eL-zRG">
+                                            <rect key="frame" x="30" y="21" width="211" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor do Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-Kx-UPb">
+                                            <rect key="frame" x="216.66666666666663" y="86" width="161.33333333333337" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo do Lançamento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkg-Tx-33b">
+                                            <rect key="frame" x="30" y="52" width="333" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bcT-Kx-UPb" firstAttribute="trailing" secondItem="yVY-J4-NSw" secondAttribute="trailingMargin" constant="5" id="Emy-ie-nUR"/>
+                                        <constraint firstItem="bcT-Kx-UPb" firstAttribute="bottom" secondItem="yVY-J4-NSw" secondAttribute="bottomMargin" constant="5" id="FIm-I4-Nuo"/>
+                                        <constraint firstItem="Nkg-Tx-33b" firstAttribute="leading" secondItem="yVY-J4-NSw" secondAttribute="leadingMargin" constant="10" id="Idh-K7-SSQ"/>
+                                        <constraint firstItem="TE1-eL-zRG" firstAttribute="top" secondItem="yVY-J4-NSw" secondAttribute="topMargin" constant="10" id="JBY-ZF-H2R"/>
+                                        <constraint firstItem="Nkg-Tx-33b" firstAttribute="top" secondItem="TE1-eL-zRG" secondAttribute="bottom" constant="10" id="Nhl-oh-3JX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Nkg-Tx-33b" secondAttribute="trailing" constant="10" id="rYJ-lk-ug7"/>
+                                        <constraint firstItem="TE1-eL-zRG" firstAttribute="leading" secondItem="yVY-J4-NSw" secondAttribute="leadingMargin" constant="10" id="zeV-9S-oUt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.97819105487003499" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="lblDetalhe" destination="bcT-Kx-UPb" id="QhC-dO-Ump"/>
+                                    <outlet property="lblSubtitulo" destination="Nkg-Tx-33b" id="Yzg-Tv-9FA"/>
+                                    <outlet property="lblTitulo" destination="TE1-eL-zRG" id="jNS-ty-mns"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DMP-oQ-AUt" id="Xs5-kw-PZo"/>
+                            <outlet property="delegate" destination="DMP-oQ-AUt" id="U7K-45-WCh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lançamento Financeiro" id="bMg-ld-gY6">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="WwN-0B-Y8a">
+                            <connections>
+                                <action selector="navegar:" destination="DMP-oQ-AUt" id="hKz-RC-BcB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzd-sq-igd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539.6946564885495" y="-13.380281690140846"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ifR-3g-ac6">
+            <objects>
+                <navigationController id="g9y-t4-6iG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MtU-R5-bP3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DMP-oQ-AUt" kind="relationship" relationship="rootViewController" id="rIS-OU-j2w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dof-pE-cHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="-13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
